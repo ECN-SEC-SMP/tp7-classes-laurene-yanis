@@ -1,5 +1,6 @@
 #include <iostream>
 #include "point.hpp"
+
 using namespace std;
 
 int main(){

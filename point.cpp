@@ -33,9 +33,9 @@ Point::Point(){
     abscisse = 0;
 }
 
-Point::Point(double param1, double param2){
-    ordonnees = param1;
-    abscisse = param2;
+Point::Point(double ord, double absc){
+    ordonnees = ord;
+    abscisse = absc;
 }
 
 Point::Point(const Point &newpoint){
