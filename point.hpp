@@ -1,4 +1,6 @@
 #include <ostream>
+#ifndef POINT_HPP
+#define POINT_HPP
 class Point{
 private:
     double ordonnees;
@@ -21,3 +23,5 @@ public :
 };
 
 std::ostream& operator<<(std::ostream& os, Point const& p);
+
+#endif

@@ -12,3 +12,10 @@ Cercle::Cercle(Point centre, double rayon){
     this->rayon = rayon;
     this->setCentre(centre);
 }
+
+void Cercle::setRayon(double ray){
+    this->rayon = ray;
+}
+double Cercle::getRayon(){
+    return this->rayon;
+}

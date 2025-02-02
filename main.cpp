@@ -1,5 +1,6 @@
 #include <iostream>
-#include "point.hpp"
+#include "carre.hpp"
+#include "cercle.hpp"
 
 using namespace std;
 
@@ -27,6 +28,17 @@ int main(){
     cout<<"Point3 : Ordonnée "<<point3.getOrdonnee()<<" Abscisse "<<point3.getAbscisse()<<endl;
     cout << point3<<endl;
     point1+= point2;
-    cout << point1;
+    cout << point1<<endl;
+
+
+    //Test essai objet Cercle :
+
+    //Test essai objet Rectangle :
+
+    Rectangle rect1 = Rectangle(point2, 5, 3.4);//creation d'un type rectangle
+    cout<<"(Avant changement) Rectangle 1 : de centre "<<rect1.getCentre()<<", de longueur "<<rect1.getLongueur()<<" et de largeur "<<rect1.getLargeur()<<endl;
+    
+    //Test essai objet Carre :
+
     return 0;
 }

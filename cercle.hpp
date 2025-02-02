@@ -7,4 +7,7 @@ public :
     Cercle(Point centre, double rayon);
     double perimetre();
     double surface();
+
+    void setRayon(double ray);
+    double getRayon();
 };

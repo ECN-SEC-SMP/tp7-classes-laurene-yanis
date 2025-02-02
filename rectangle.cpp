@@ -15,3 +15,19 @@ double Rectangle::perimetre(){
 double Rectangle::surface(){
     return longueur*largeur;
 }
+
+double Rectangle::getLongueur() const{
+    return this->longueur;
+}
+
+double Rectangle::getLargeur() const{
+    return this->largeur;
+}
+
+void Rectangle::setLongueur(double length){
+    this->longueur = length;
+}
+
+void Rectangle::setLargeur(double width){
+    this->largeur = width;
+}
