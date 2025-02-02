@@ -9,5 +9,7 @@ public :
     double surface();
 
     void setRayon(double ray);
-    double getRayon();
+    double getRayon() const;
 };
+
+std::ostream& operator<<(std::ostream& os, Cercle const& forme);

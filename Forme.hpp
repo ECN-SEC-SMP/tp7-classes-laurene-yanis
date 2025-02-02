@@ -15,8 +15,8 @@ public :
 
     Forme& operator+=(const Point& valeur);
 
-    double perimetre();
-    double surface();
+    virtual double perimetre() = 0;
+    virtual double surface() = 0;
 
 };
 

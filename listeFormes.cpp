@@ -2,26 +2,20 @@
 using namespace std;
 #include <typeinfo>
 
-
-
-ListeFormes::ListeFormes(vector<Forme> tab){
-    this->tab = tab;
-}
-
 double ListeFormes::surface(){
     double s=0;
     for(int i=0;i<this->tab.size();i++){
-        s += this->tab[i].surface();
+        s += this->tab[i]->surface();
     }
     return s;
 }
 
-void ListeFormes::ajouter(Forme shape){
+void ListeFormes::ajouter(Forme* shape){
     this->tab.push_back(shape);
 }
 
 
-Rectangle ListeFormes::boiteEnglobante(){
+/* Rectangle ListeFormes::boiteEnglobante(){
     double longueur;
     double largeur;
     double diametre;
@@ -40,4 +34,4 @@ Rectangle ListeFormes::boiteEnglobante(){
 
 
     double mthd = min(s1, s2);
-}
+} */

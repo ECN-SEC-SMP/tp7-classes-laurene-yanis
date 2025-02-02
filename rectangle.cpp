@@ -31,3 +31,12 @@ void Rectangle::setLongueur(double length){
 void Rectangle::setLargeur(double width){
     this->largeur = width;
 }
+
+std::ostream &operator<<(std::ostream &os, Rectangle const &forme)
+{
+    os << "Rectangle: \n"
+     << "Centre: " << forme.getCentre() << endl
+     << "Longueur: " << forme.getLongueur() << endl
+     << "Largeur: " << forme.getLargeur() << endl;
+    return os;
+}

@@ -16,6 +16,14 @@ Cercle::Cercle(Point centre, double rayon){
 void Cercle::setRayon(double ray){
     this->rayon = ray;
 }
-double Cercle::getRayon(){
+double Cercle::getRayon() const{
     return this->rayon;
+}
+
+std::ostream &operator<<(std::ostream &os, Cercle const &forme)
+{
+    os << "Cercle: \n"
+     << "Centre: " << forme.getCentre() << std::endl
+     << "Rayon: " << forme.getRayon() << std::endl;
+    return os;
 }

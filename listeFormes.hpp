@@ -6,11 +6,9 @@ using namespace std;
 
 class ListeFormes{
 protected :
-    double surface;
-    vector<Forme> tab;
+    vector<Forme*> tab;
 public :
-    ListeFormes(vector<Forme> tab);
-    void ajouter(Forme shape);
+    void ajouter(Forme* shape);
     double surface();
     Rectangle boiteEnglobante();
 };

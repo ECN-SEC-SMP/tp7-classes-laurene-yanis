@@ -1,3 +1,4 @@
+#pragma once
 #include "Forme.hpp"
 
 class Rectangle : public Forme{
@@ -16,3 +17,4 @@ public :
     void setLargeur(double width);
 };
 
+std::ostream& operator<<(std::ostream& os, Rectangle const& forme);

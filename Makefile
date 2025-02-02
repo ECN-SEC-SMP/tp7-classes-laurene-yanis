@@ -1,7 +1,7 @@
 all: main.exe
 
-main.exe: main.o point.o carre.o rectangle.o cercle.o Forme.o
-	g++ -o main.exe main.o point.o carre.o rectangle.o cercle.o Forme.o
+main.exe: main.o point.o carre.o rectangle.o cercle.o Forme.o listeFormes.o
+	g++ -o main.exe main.o point.o carre.o rectangle.o cercle.o Forme.o listeFormes.o
 
 main.o: main.cpp
 	g++ -c main.cpp
@@ -20,3 +20,6 @@ cercle.o: cercle.cpp
 
 Forme.o: Forme.cpp
 	g++ -c Forme.cpp
+
+listeFormes.o: listeFormes.cpp
+	g++ -c listeFormes.cpp
